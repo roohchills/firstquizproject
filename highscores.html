@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/style.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+  </head>
+  <body>
+    <div class="highscorebox">
+        <h2 class="highscoretext">Highscores</h2>
+        <div id="highscores" class="indhighscores">
+        <!-- High scores will be inserted here -->
+        </div>
+        <button id="resetbutton">Reset Quiz</button>
+        <button id="restartbutton">Restart Quiz</button>
+</div>
+
+    <script src="assets/script.js"></script>
+
+    <!-- <script>
+
+        if (performance.getEntriesByType("navigation")[0].type === "reload" && window.location.href.includes("highscores.html")) {
+        // Redirect to the results page with a zero score
+        window.location.href = "index.html";
+
+        }
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the username and score from localStorage
+        const username = localStorage.getItem("username");
+        const finalScore = localStorage.getItem("finalScore");
+
+        // Get the existing high scores from localStorage, or initialize to an empty array if it doesn't exist
+        const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
+
+        // Add the new score to the array
+        highscores.push({ username, finalScore });
+
+        // Save the updated high scores back to localStorage
+        localStorage.setItem("highscores", JSON.stringify(highscores));
+
+        const highscoresDiv = document.getElementById("highscores");
+        highscores.sort((a, b) => b.finalScore - a.finalScore);
+
+        // Display high scores
+
+        // Display high scores
+        highscores.forEach(function (entry, index) {
+            const div = document.createElement("div");
+            div.textContent = (index + 1) + ". " + entry.username + "- " + entry.finalScore;
+            div.classList.add("score-entry");
+            highscoresDiv.appendChild(div);
+        });
+        
+
+        const resetButton = document.getElementById("resetbutton");
+        resetButton.addEventListener("click", function () {
+        // Clear high scores and redirect to quiz.html
+            localStorage.removeItem("highscores");
+            localStorage.removeItem("username"); // Remove username from local storage
+            localStorage.removeItem("finalScore"); // Remove finalScore from local storage
+            highscoresDiv.innerHTML = "";
+            window.location.href = "quiz.html";
+        });
+
+        const restartButton = document.getElementById("restartbutton");
+        restartButton.addEventListener("click", function () {
+          // Redirect to quiz.html without clearing high scores
+          window.location.href = "quiz.html";
+        });
+
+      });
+    </script> -->
+  </body>
+</html>

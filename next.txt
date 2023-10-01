@@ -1,0 +1,5 @@
+1. Check all questions and answers
+2. Push to Github 
+3. Host your project in EC - 2
+4. Link your project to the website
+

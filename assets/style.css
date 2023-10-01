@@ -1,0 +1,306 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #218380;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    padding: 20px;
+  }
+  
+  .roundedrectangle {
+    width: 800px;
+    height: 300px;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.5);
+  }
+  
+  #timer {
+    /* Move time to the right */
+    color: white;
+    margin-right: 50px;
+    /* Change text color of time */
+  }
+  
+  .pagetitle {
+    font-size: 30px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 60px;
+  }
+  
+  .secondline {
+    font-size: 20px;
+    position: relative;
+    margin-left: 50px;
+    font-weight: normal;
+  }
+  
+  .thirdline {
+    font-size: 20px;
+    margin-left: 50px;
+    font-weight: normal;
+  }
+  
+  .button {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: #218380;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /*.quizbox {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 470px;
+    max-height: 700px;
+    /*min-height: 400px;*/
+  /*border: 2px solid lightgrey;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-top: 300px;
+    box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.5);
+    /*overflow-y: auto;*/
+  
+  .quizbox {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    max-width: 90%; /* Adjust as needed */
+    min-height: 300px; /* Set a minimum height for the box */
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Center the box horizontally and vertically */
+    box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.5);
+    overflow: hidden; /* Add overflow property to handle overflowing content */
+  }
+  
+  .optionsection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px; /* Increase the gap for better spacing */
+    padding: 30px;
+    padding-bottom: 50px; /* Add padding for spacing within the options */
+  }
+  
+  /*.optionsection {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+  }*/
+  
+  .question {
+    margin: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #218380; /* Change border-color property */
+    background-color: #218380;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  /*.question {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 700px;
+    height: 50px;
+    border: none;
+    background-color: #218380;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 22px;
+  }*/
+  
+  #answer {
+    position: relative;
+    color: blue;
+    left: 44px;
+    top: -20px;
+    margin-bottom: 10px;
+  }
+  
+  /*#option-4 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 700px;
+    height: 50px;
+    border: none;
+    background-color: #218380;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 22px;
+    margin-bottom: 80px;
+  }*/
+  
+  .resultsbox {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: 90%; /* Adjust as needed */
+    min-height: 300px; /* Set a minimum height for the box */
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Center the box horizontally and vertically */
+    box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.5);
+    overflow: hidden;
+  }
+  /* Add overflow property to handle overflowing content *
+  
+  
+  /*.resultsbox {
+    width: 600px;
+    min-height: 200px;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+    margin-left: 600px;
+    margin-top: 400px;
+    box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.5);
+    overflow-y: auto;
+  }*/
+  
+  .submitbutton {
+    position: relative;
+    left: 20px;
+    bottom: 1px;
+    border-radius: 10px;
+    width: 75px;
+    height: 40px;
+    border: none;
+    background-color: #218380;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #score {
+    position: relative;
+    left: 9%;
+    top: 2%;
+  }
+  
+  #usernameForm {
+    position: relative;
+    left: 9%;
+    top: 10px;
+  }
+  
+  #box {
+    position: relative;
+    left: 8px;
+    height: 25px;
+  }
+  
+  .resultstitle {
+    position: relative;
+    top: 3%;
+    left: 9%;
+  }
+  
+
+  .highscorebox{ 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+    margin-top: 100px;
+    left: 50%;
+    transform: translate( -50%);
+    box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.5);
+    overflow-y: auto;
+    
+}
+
+
+  .indhighscores{
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    left: 4%;
+    position: relative;
+
+  }
+
+  .score-entry {
+    margin-bottom: 20px;  
+  }
+
+
+  .highscoretext{ 
+    
+      left: 4%;
+      position: relative;
+      font-weight: 900;
+      top: 20px;
+      margin-bottom: 40px;
+  }
+
+  #resetbutton{ 
+
+      position: relative;
+      left: 200px;
+      bottom: 1px;
+      border-radius: 10px;
+      width: 100px;
+      height: 40px;
+      border: none;
+      background-color: #218380;
+      color: white;
+      cursor: pointer;
+      text-align: center;
+}
+
+  #restartbutton{ 
+
+    position: relative;
+    left: 400px;
+    bottom: 40px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #218380;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+
+  
+  

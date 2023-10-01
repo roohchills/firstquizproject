@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Codedamn - Quiz Project</title>
+</head>
+<body>
+    <div class="resultsbox">
+        <h1 class="resultstitle">All Done</h1>
+        <span id="score">Your final score is: </span>
+        <form id="usernameForm">
+            <label for="box">Enter Initials:</label>
+            <input type="text" id="box" required>
+            <button type="submit" class="submitbutton">Submit</button>
+        </form>
+    </div>
+    
+    <script src="assets/script.js"></script>
+
+    <!-- <script>
+        
+            // Retrieve the final score from localStorage
+            const finalScore = localStorage.getItem("finalScore");
+
+            // Update the score element with the retrieved score
+            const scoreElement = document.getElementById("score");
+            if (scoreElement) {
+                scoreElement.textContent = `Your final score is: ${finalScore || 0}`;
+            }
+
+            // Handle form submission
+            document.addEventListener("DOMContentLoaded", function () {
+            const usernameForm = document.getElementById("usernameForm");
+            usernameForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Get the entered username
+                const username = document.getElementById("box").value;
+
+                // Store username in localStorage
+                localStorage.setItem("username", username);
+
+                // Redirect to highscores.html
+                window.location.href = "highscores.html";
+            });
+        });
+    </script> -->
+</body>
+</html>
