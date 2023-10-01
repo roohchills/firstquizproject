@@ -239,11 +239,11 @@ nav {
     width: 800px;
     border: 2px solid lightgrey;
     border-radius: 20px;
-    margin-top: 100px;
+    margin-top: 300px;
     left: 50%;
     transform: translate( -50%);
     box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.5);
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     
 }
 
