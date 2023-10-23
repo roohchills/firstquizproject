@@ -67,6 +67,9 @@ function startTimer() {
     time--;
     if (time < 0) {
       clearInterval(timerInterval);
+      const finalScore = correctAnswers - incorrectAnswers; // Calculate the final score
+      localStorage.setItem("finalScore", finalScore);
+      window.location.href = "results.html";
       timerElement.textContent = "Time is up!";
       // Handle timer expiry, e.g., submit quiz automatically
     } else {
